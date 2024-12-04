@@ -1,6 +1,9 @@
 Touchscreen doesn't work. Use a USB-OTG to plug in your favorite mouse.
+
 Encryption doesn't work.
+
 Some fstab entries are broken still.
+
 
 That being said, regular backups without data seem to be working, although I haven't tried to restore yet.
 
