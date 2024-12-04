@@ -1,0 +1,23 @@
+/system         ext4     system                                     flags=display=system;logical;slotselect;backup=1;flashimg=1
+/system_ext     ext4     system_ext                                 flags=display=system_ext;logical;slotselect;backup=1;flashimg=1
+/vendor         ext4     vendor                                     flags=display=vendor;logical;slotselect;backup=1;flashimg=1
+/odm            ext4     odm                                        flags=display=odm;logical;slotselect;backup=1;flashimg=1
+/product        ext4     product                                    flags=display=product;logical;slotselect;backup=1;flashimg=1
+/data           f2fs     /dev/block/bootdevice/by-name/userdata     flags=display=data;backup=1;flashimg=1
+/metadata       f2fs     /dev/block/bootdevice/by-name/metadata     flags=display=metadata;backup=1;flashimg=1
+/sdcard         vfat     /dev/block/mmcblk1p1                       flags=display=sdcard
+/boot           emmc     /dev/block/bootdevice/by-name/boot         flags=display=boot;backup=1;flashimg=1
+/misc           emmc     /dev/block/bootdevice/by-name/misc         flags=display=misc;backup=1;flashimg=1
+#SD cards
+/external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card 1";storage;wipeingui;removable
+/external_sd    vfat        /dev/block/mmcblk1p1	/dev/block/mmcblk1 	flags=display="MicroSD Card 2";storage;wipeingui;removable
+/external_sd	auto		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card 3";storage;wipeingui;removable
+/external_sd    auto        /dev/block/mmcblk1p1	/dev/block/mmcblk1 	flags=display="MicroSD Card 4";storage;wipeingui;removable
+
+#OTG
+/usb-otg	auto		/dev/block/sdf1	/dev/block/sdf		  flags=display="USB-OTG 1";backup=0
+/usb-otg    auto        /dev/block/sda1 /dev/block/sda        flags=display="USB OTG 2";backup=0
+/usb-otg    auto        /dev/block/sdg1 /dev/block/sdg        flags=display="USB-OTG 3";backup=0
+/usb_otg    auto        /dev/block/sdd1 /dev/block/sdd        flags=display="USB-OTG 5";backup=0
+
+# Online TWRP Builder By Team Hovatek
