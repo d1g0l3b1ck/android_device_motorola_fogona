@@ -1,5 +1,7 @@
 Touchscreen doesn't work. Use a USB-OTG to plug in your favorite mouse.
 
+Neither ADB nor MTP works.
+
 Encryption doesn't work.
 
 Some fstab entries are broken still.
